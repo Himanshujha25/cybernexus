@@ -186,21 +186,21 @@ const CyberNexus = () => {
       <CircleBackground size={300} top="70%" left="10%" opacity={0.12} />
       
       {/* Sticky Header */}
-      <motion.header 
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md ${isNavVisible ? 'bg-black bg-opacity-70 shadow-lg' : ''}`}
-        style={{ opacity: headerOpacity }}
-      >
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center">
-            <motion.img
-              src="/logo.png"
-              alt="CyberNexus Logo"
-              className="h-10 mr-3"
-              whileHover={{ rotate: 10 }}
-            />
-            <h1 className="text-xl font-bold hidden md:block">CyberNexus</h1>
-          </div>
-          
+        <motion.header 
+          className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 backdrop-blur-md ${isNavVisible ? 'bg-black bg-opacity-70 shadow-lg' : ''}`}
+          style={{ opacity: headerOpacity }}
+        >
+          <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div className="flex items-center">
+          <motion.img
+            src={`${logo}`}
+            alt="CyberNexus Logo"
+            className="h-10 mr-3"
+            whileHover={{ rotate: 10 }}
+          />
+          <h1 className="text-xl font-bold hidden md:block">CyberNexus</h1>
+            </div>
+            
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-1">
             {[
@@ -313,21 +313,7 @@ const CyberNexus = () => {
             </Button>
           </motion.div>
           
-          <motion.div 
-            className="absolute bottom-10"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1.5, duration: 1 }}
-          >
-            <motion.div 
-              className="w-6 h-10 border-2 border-white rounded-full flex justify-center items-start p-1"
-              animate={{ y: [0, 10, 0] }}
-              transition={{ repeat: Infinity, duration: 1.5 }}
-            >
-              <div className="bg-white w-1 h-2 rounded-full" />
-            </motion.div>
-            <p className="mt-2 text-sm text-gray-400">Scroll to explore</p>
-          </motion.div>
+         
         </section>
 
         {/* Mission Section */}
@@ -475,42 +461,31 @@ const CyberNexus = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                { 
-                  title: "SecureShare", 
-                  desc: "Secure file-sharing platform with end-to-end encryption, zero-knowledge architecture, and ephemeral storage options.",
-                  image: "/project1.jpg",
-                  tech: ["React", "Node.js", "Cryptography", "MongoDB"]
-                },
-                { 
-                  title: "VulnHunt", 
-                  desc: "An intelligent vulnerability scanner that helps developers identify and fix security issues during the development process.",
-                  image: "/project2.jpg",
-                  tech: ["Python", "Machine Learning", "Static Analysis", "Docker"]
-                },
-                { 
-                  title: "DarkNet Crawler", 
-                  desc: "A secure, ethical dark web crawler for research and analysis, with advanced anonymization techniques.",
-                  image: "/project3.jpg",
-                  tech: ["Python", "Tor", "NLP", "Data Analysis"]
-                },
-                { 
-                  title: "CyberSecure Blog", 
-                  desc: "A knowledge-sharing platform featuring the latest cybersecurity tutorials, research findings, and industry insights.",
-                  image: "/project4.jpg",
-                  tech: ["React", "GraphQL", "Authentication", "SEO"]
-                },
-                { 
-                  title: "Threat Intel Dashboard", 
-                  desc: "Real-time cybersecurity threat intelligence visualization and analysis platform with customizable alerting.",
-                  image: "/project5.jpg",
-                  tech: ["Vue.js", "D3.js", "APIs", "Real-time Data"]
-                },
-                { 
-                  title: "CodeGuardian", 
-                  desc: "VS Code extension that suggests security improvements and best practices as you write code.",
-                  image: "/project6.jpg",
-                  tech: ["TypeScript", "VS Code API", "SAST", "Node.js"]
-                },
+           { 
+            title: "Triply", 
+            desc: "A smart travel planner app that helps users explore destinations, manage itineraries, and get personalized recommendations.",
+            image: "/triply.jpg",
+            tech: ["React", "Node.js", "MongoDB", "API Integration"]
+          },
+          { 
+            title: "Smart CV", 
+            desc: "An AI-powered resume builder that crafts professional CVs with real-time tips, customizable templates, and export options.",
+            image: "/smartcv.jpg",
+            tech: ["HTML", "CSS", "JavaScript", "AI Suggestions"]
+          },
+          { 
+            title: "RecipeMaker", 
+            desc: "A recipe collection and discovery app featuring categorized vegetarian, vegan, and dessert dishes with clean UI and filtering.",
+            image: "/recipemaker.jpg",
+            tech: ["React", "CSS Modules", "Routing", "Image Assets"]
+          },
+          { 
+            title: "Task Management System", 
+            desc: "A productivity app to manage daily tasks with priority levels, due dates, and progress tracking across projects.",
+            image: "/taskmanager.jpg",
+            tech: ["React", "Firebase", "Authentication", "Material UI"]
+          }
+          
               ].map((proj, i) => (
                 <Card key={i} delay={i * 0.05} className="overflow-hidden group">
                   <div className="h-48 -m-6 mb-4 bg-gray-700 relative">
@@ -559,26 +534,32 @@ const CyberNexus = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
-                { 
-                  title: "Web Application Development", 
-                  desc: "Secure, responsive, and scalable web applications built with modern frameworks and best practices.",
-                  icon: "🌐"
-                },
-                { 
-                  title: "Security Assessments", 
-                  desc: "Comprehensive vulnerability scanning, penetration testing, and security reviews for your applications.",
-                  icon: "🔒"
-                },
-                { 
-                  title: "DevSecOps Integration", 
-                  desc: "Embed security throughout your development pipeline with automated testing and secure CI/CD practices.",
-                  icon: "⚙️"
-                },
-                { 
-                  title: "Custom Security Tools", 
-                  desc: "Bespoke security solutions tailored to your organization's specific needs and technology stack.",
-                  icon: "🛠️"
-                },
+              { 
+                title: "Frontend Development", 
+                desc: "Modern, responsive, and visually appealing user interfaces using the latest frontend technologies.",
+                icon: "🎨"
+              },
+              { 
+                title: "Backend Development", 
+                desc: "Robust and secure server-side development with scalable architecture and database integration.",
+                icon: "🧠"
+              },
+              { 
+                title: "Full-Stack Development", 
+                desc: "Complete web solutions from UI to database — seamless integration of frontend and backend services.",
+                icon: "🔗"
+              },
+              { 
+                title: "DevOps & Deployment", 
+                desc: "Streamlined deployment processes, version control, and CI/CD integration for efficient development workflows.",
+                icon: "🚀"
+              },
+              { 
+                title: "UI/UX Design", 
+                desc: "Intuitive and user-friendly designs crafted using Figma to ensure engaging digital experiences.",
+                icon: "🖌️"
+              }
+              
               ].map((service, i) => (
                 <motion.div 
                   key={i}
@@ -636,19 +617,20 @@ const CyberNexus = () => {
               viewport={{ once: true }}
             >
               {[
-                { name: "React", logo: "react.svg" },
-                { name: "Node.js", logo: "nodejs.svg" },
-                { name: "MongoDB", logo: "mongodb.svg" },
-                { name: "Python", logo: "python.svg" },
-                { name: "Tailwind CSS", logo: "tailwind.svg" },
-                { name: "Docker", logo: "docker.svg" },
-                { name: "Kali Linux", logo: "kali.svg" },
-                { name: "GitHub", logo: "github.svg" },
-                { name: "AWS", logo: "aws.svg" },
-                { name: "GraphQL", logo: "graphql.svg" },
-                { name: "TypeScript", logo: "typescript.svg" },
-                { name: "Firebase", logo: "firebase.svg" },
-              ].map((tech, i) => (
+  { name: "HTML", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "JavaScript", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "React", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Node.js", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
+  { name: "MongoDB", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
+  { name: "Firebase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+  { name: "GitHub", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+  { name: "Tailwind CSS", logo: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
+  { name: "TypeScript (Learning)", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
+  { name: "Docker (Learning)", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+  { name: "Kali Linux (Cybersecurity)", logo: "https://upload.wikimedia.org/wikipedia/commons/2/2d/Kali-dragon-icon.svg" }
+]
+.map((tech, i) => (
                 <motion.div 
                   key={i}
                   className="bg-gray-800 bg-opacity-50 border border-gray-700 rounded-lg p-6 flex flex-col items-center"
@@ -688,35 +670,37 @@ const CyberNexus = () => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { 
-                  name: "Himanshu Jha", 
-                  role: "Web Architect", 
-                  skills: "React, System Design, Project Management",
-                  bio: "Himanshu brings 5+ years of experience building scalable web applications with a focus on performance and security.",
-                  image: "/team1.jpg"
-                },
-                { 
-                  name: "Kritik Verma", 
-                  role: "Frontend Developer", 
-                  skills: "React, Tailwind CSS, UX Design",
-                  bio: "Kritik specializes in creating beautiful, intuitive interfaces with modern frontend technologies.",
-                  image: "/team2.jpg" 
-                },
-                { 
-                  name: "Nitin Prakash", 
-                  role: "Cybersecurity Analyst", 
-                  skills: "Python, Networking, Kali Linux",
-                  bio: "Nitin has a background in network security and specializes in penetration testing and vulnerability research.",
-                  image: "/team3.jpg"
-                },
-                { 
-                  name: "Bittu Choudhary", 
-                  role: "Full Stack Developer", 
-                  skills: "MongoDB, Express, Node.js, React",
-                  bio: "Bittu excels at building end-to-end applications with the MERN stack and integrating security best practices.",
-                  image: "/team4.jpg"
-                },
-              ].map((member, i) => (
+  { 
+    name: "Himanshu Jha", 
+    role: "Full Stack Developer", 
+    skills: "React, Node.js, MongoDB, System Design",
+    bio: "Himanshu is a full stack developer passionate about building scalable web applications with a focus on clean architecture and performance.",
+    image: "https://randomuser.me/api/portraits/men/75.jpg"
+  },
+  { 
+    name: "Kritik Verma", 
+    role: "UI/UX Designer", 
+    skills: "Figma, Tailwind CSS, Responsive Design",
+    bio: "Kritik crafts engaging and user-friendly interfaces, ensuring delightful user experiences through thoughtful design.",
+    image: "https://randomuser.me/api/portraits/men/45.jpg"
+  },
+  { 
+    name: "Nitin Prakash", 
+    role: "Tester", 
+    skills: "Python, Manual Testing, Kali Linux",
+    bio: "Nitin ensures product reliability and security through rigorous testing and vulnerability checks.",
+    image: "https://randomuser.me/api/portraits/men/32.jpg"
+  },
+  { 
+    name: "Bittu Choudhary", 
+    role: "Tester", 
+    skills: "Bug Tracking, Functional Testing, Reporting",
+    bio: "Bittu is a detail-oriented tester dedicated to delivering bug-free, high-quality applications.",
+    image: "https://randomuser.me/api/portraits/men/20.jpg"
+  }
+]
+
+.map((member, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 30 }}
@@ -796,22 +780,23 @@ const CyberNexus = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {[
-                {
-                  quote: "CyberNexus team delivered a secure solution that exceeded our expectations. Their attention to security details was impressive.",
-                  author: "Sarah Chen",
-                  role: "CTO, TechSafe Solutions",
-                },
-                {
-                  quote: "Working with this team has been an incredible learning experience. The collaborative environment pushes everyone to excel.",
-                  author: "Raj Patel",
-                  role: "Junior Developer",
-                },
-                {
-                  quote: "The security assessment conducted by CyberNexus revealed vulnerabilities we had no idea existed. Their recommendations were invaluable.",
-                  author: "Michael Thompson",
-                  role: "Security Director, DataGuard",
-                },
-              ].map((testimonial, i) => (
+  {
+    quote: "Himanshu and his team built a powerful full-stack solution for our platform. From a sleek UI to rock-solid backend and strong testing – everything was top-notch.",
+    author: "Anjali Mehra",
+    role: "Founder, RecipeNest"
+  },
+  {
+    quote: "The CyberNexus team delivered beyond expectations. Their coordination, design precision, and testing approach helped us go live smoothly and confidently.",
+    author: "Akash Yadav",
+    role: "Product Manager, TaskFlow"
+  },
+  {
+    quote: "This team blends creativity with functionality. Himanshu’s full-stack leadership, and the strong testing by Nitin and Bittu gave our project a professional edge.",
+    author: "Neha Sinha",
+    role: "Client, SmartCV Project"
+  }
+]
+.map((testimonial, i) => (
                 <motion.div
                   key={i}
                   initial={{ opacity: 0, y: 20 }}
@@ -1040,7 +1025,7 @@ const CyberNexus = () => {
           <div className="container mx-auto max-w-6xl">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <div className="flex items-center mb-6 md:mb-0">
-                <img src="/logo.png" alt="CyberNexus Logo" className="h-10 mr-3" />
+                <img src={logo} alt="CyberNexus Logo" className="h-10 mr-3" />
                 <div>
                   <h2 className="text-xl font-bold text-white">CyberNexus</h2>
                   <p className="text-gray-400 text-sm">Tech Collective</p>
