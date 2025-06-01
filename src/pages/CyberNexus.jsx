@@ -649,6 +649,19 @@ const CyberNexus = () => {
           </div>
         </section>
 
+<section>
+<motion.div>
+  <div className="container mx-auto max-w-6xl">
+    <h2>Founder</h2>
+    <div className="flex flex-col md:flex-row items-center justify-center">
+      <h3>Himanshu jha</h3>
+    </div>
+    </div>
+</motion.div>
+
+</section>
+
+
         {/* Team */}
         <section id="team" className="py-24 px-6 bg-gradient-to-b from-gray-900 to-black relative">
           <CircleBackground size={500} top="50%" right="-200px" opacity={0.1} />
@@ -701,7 +714,7 @@ const CyberNexus = () => {
   { 
     name: "Shudhanshu Yadav", 
     role: "frontend Developer", 
-    skills: "Networking,javascript,html,css,react",
+    skills: "Networking, javascript, css, react",
     bio: "Shudhanshu Yadav is a passionate frontend developer with a strong foundation in web technologies and networking.",
     image: "https://randomuser.me/api/portraits/men/20.jpg"
   }
