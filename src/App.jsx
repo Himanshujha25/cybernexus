@@ -7,7 +7,6 @@ import "./App.css"
 // Import all section components
 import Header from "./pages/sections/Header";
 import HeroSection from "./pages/sections/Hero";
-import MissionSection from "./pages/sections/Mission";
 import WhyJoinUsSection from "./pages/sections/Join us";
 import ProjectsSection from "./pages/sections/Project";
 import ServicesSection from "./pages/sections/Services";
@@ -17,6 +16,7 @@ import TeamSection from "./pages/sections/Team";
 import Review from "./pages/sections/Review";
 import Values from "./pages/sections/core values";
 import Contact from "./pages/sections/Contact";
+import MissionSection from "./pages/sections/Mission";
 import Footer from "./pages/sections/Footer";
 
 
