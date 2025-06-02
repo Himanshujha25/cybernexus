@@ -16,7 +16,7 @@ import TeamSection from "./pages/sections/Team";
 import Review from "./pages/sections/Review";
 import Values from "./pages/sections/CoreValues";
 import Contact from "./pages/sections/Contact";
-import MissionSection from "./pages/sections/Mission";
+// import MissionSection from "./pages/sections/Mission";
 import Footer from "./pages/sections/Footer";
 
 
@@ -78,7 +78,7 @@ const CyberNexus = () => {
 
       <div className="relative z-10">
         <HeroSection logo={logo} />
-        <MissionSection />
+        {/* <MissionSection /> */}
         <WhyJoinUsSection />
         <ProjectsSection />
         <ServicesSection />
