@@ -40,7 +40,7 @@ export const CircleBackground = ({ size = 300, top, left, right, opacity = 0.2 }
   <div 
     className="absolute rounded-full blur-3xl bg-blue-600 z-0"
     style={{ 
-      width: size, 
+      width: size , 
       height: size, 
       top, 
       left, 
