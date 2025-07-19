@@ -91,7 +91,7 @@ const ProjectDashboard = () => {
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto grid gap-7 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-4 cursor-pointer">
+      <div className="max-w-7xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-4 cursor-pointer">
         {projects.map((proj, i) => (
           <div key={i} className="bg-zinc-900 border border-zinc-800  shadow overflow-hidden flex flex-col">
             {/* Image */}
