@@ -64,26 +64,26 @@ const HeroSection = () => {
 
             <Link to="projects" smooth={true} duration={800} offset={-70}>
               <Button className="bg-transparent border border-blue-600 text-blue-400 hover:bg-blue-800 hover:bg-opacity-20 px-6 py-3 text-sm sm:text-base rounded-md shadow hover:shadow-blue-600/30 transition duration-300">
-    Explore Projects
-  </Button>
-</Link>
+                Explore Projects
+              </Button>
+            </Link>
 
           </motion.div>
         </div>
       </div>
 
       {/* Right Section - Lottie Animation */}
-     <motion.div
-  className="w-full xl:w-1/2 flex justify-start xl:justify-end items-center py-20 overflow-hidden rounded-xl shadow-md
+      <motion.div
+        className="w-full xl:w-1/2 flex justify-start xl:justify-end items-center py-20 overflow-hidden rounded-xl shadow-md
  sm:py-20 xl:py-0 px-4 sm:px-8"
-  initial={{ opacity: 0, x: 0 }}
-  animate={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.9 }}
->
-  <div className="w-[450px] sm:w-[500px] md:w-[550px] lg:w-[600px] xl:w-[650px]">
-    <Lottie animationData={busssLottie} loop={true} />
-  </div>
-</motion.div>
+        initial={{ opacity: 0, x: 0 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.9 }}
+      >
+        <div className="w-[450px] sm:w-[500px] md:w-[550px] lg:w-[600px] xl:w-[650px]">
+          <Lottie animationData={busssLottie} loop={true} />
+        </div>
+      </motion.div>
 
     </section>
   );

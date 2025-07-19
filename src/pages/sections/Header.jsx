@@ -18,7 +18,7 @@ const Header = ({ activeSection, headerOpacity, logo }) => {
     <motion.header
   className="fixed top-0 left-0 right-0 z-50 bg-gradient-to-b from-gray-800 to-black backdrop-blur-md transition-all duration-300 "
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center">
           <motion.img
@@ -36,7 +36,7 @@ const Header = ({ activeSection, headerOpacity, logo }) => {
   {menuItems.map((item) => (
     <NavLink key={item.name} to={item.to}>
       <span
-        className={`relative text-[0.9vw] font-semibold   tracking-tighter pb-1 transition-colors duration-300 ${
+        className={`relative text-lg font-semibold   tracking-tighter pb-1 transition-colors duration-300 ${
           activeSection === item.to
             ? "text-blue-500"
             : "text-white hover:text-blue-500"

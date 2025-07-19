@@ -62,19 +62,19 @@ const Footer = () => {
           </div>
 
           {/* Footer Links */}
-          <div className="flex flex-nowrap gap-6 overflow-x-auto scrollbar-hide text-sm leading-relaxed">
+          <div className="flex flex-nowrap gap-6 overflow-x-auto scrollbar-hide text-sm leading-relaxed text-center justify-center items-center">
             {/* Company */}
-            <div className="shrink-0 w-fit">
-              <h4 className="text-zinc-200 text-lg font-semibold mb-1">Company</h4>
+            <div className="shrink-0 w-fit text-center">
+              <h4 className="text-zinc-200 text-xl font-semibold mb-1">Company</h4>
               <ul className="">
-                <li><a href="#home" className="hover:text-white transition">About Us</a></li>
+                <li><a href="#home" className="hover:text-white transition ">About Us</a></li>
                 <li><a href="#projects" className="hover:text-white transition">Our Projects</a></li>
               </ul>
             </div>
 
             {/* Legal */}
             <div className="shrink-0 w-fit">
-              <h4 className="text-white text-lg font-semibold mb-1">Legal</h4>
+              <h4 className="text-white text-xl font-semibold mb-1">Legal</h4>
               <ul className="">
                 <li to="/privacy-policy"><a href="/privacy-policy" className="hover:text-white transition">Privacy Policy</a></li>
                 <li><a href="/terms" className="hover:text-white transition">Terms & Conditions</a></li>
@@ -83,7 +83,7 @@ const Footer = () => {
 
             {/* Support */}
             <div className="shrink-0 w-fit">
-              <h4 className="text-white text-lg font-semibold mb-1">Support</h4>
+              <h4 className="text-white text-xl font-semibold mb-1">Support</h4>
               <ul className="">
                 <li><a href="#contact" className="hover:text-white transition">Help Center</a></li>
                 <li><a href="#faq" className="hover:text-white transition">FAQs</a></li>
@@ -91,16 +91,18 @@ const Footer = () => {
             </div>
           </div>
 
-          <hr className="border-gray-800" />
 
-          <div className="text-center pt-4 text-sm text-zinc-500">
+          <div className="text-center pt-4 text-md text-zinc-500">
             <p>
               © {new Date().getFullYear()} <strong>CyberNexus Tech Collective</strong>. All rights reserved.
             </p>
             <p className="mt-1">Built with ❤️ by full-stack engineers & creators.</p>
           </div>
         </div>
+               <hr className="border-gray-800" />
       </footer>
+      
+   
 
       {/* Back*/}
       <AnimatePresence>

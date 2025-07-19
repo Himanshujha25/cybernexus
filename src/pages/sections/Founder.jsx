@@ -1,7 +1,8 @@
 // Founder.jsx
 import React from "react";
 import { motion } from "framer-motion";
-import { Card, CardContent, sectionVariants } from "../components/Background"; // Update path as needed
+import { Card, CardContent, sectionVariants } from "../components/Background"; // Update path 
+import himanshuImage from "../../assets/himanshu.jpg"; // Replace with the actual image 
 
 const Founder = () => {
   return (
@@ -50,9 +51,9 @@ Fueling the future of digital innovation by merging technology, creativity, and 
           </div>
 
           {/* Right Image */}
-          <div className="w-50 h-50 md:w-60 md:h-60 rounded-full border-4 border-blue-900 overflow-hidden shadow-lg">
+          <div className="w-56 h-56 md:w-60 md:h-60 rounded-full border-4 border-blue-900 overflow-hidden shadow-lg">
             <img
-              src="https://imgs.search.brave.com/TfuEV5ygSTxJNY7hepbyAHDILL1gu7dssINtc-eFRBs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNy8w/Ni8xMC8xNi8zMy9k/b3VibGUtZXhwb3N1/cmUtMjM5MDE4NV82/NDAuanBn" 
+              src={himanshuImage} // Replace with the actual image path
               alt="Founder Himanshu"
               className="w-full h-full object-cover"
               loading="lazy"

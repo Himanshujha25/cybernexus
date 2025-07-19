@@ -66,7 +66,7 @@ const projects = [
     bg: "https://imgs.search.brave.com/RlDJwTYy6El9ES33ir0gbiWbPpOtvLZ-yBNX6bWT0qo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS12ZWN0b3Iv/dmludGFnZS1yZWNp/cGVzLXlvdXR1YmUt/Y2hhbm5lbC1hcnRf/MjMtMjE0ODkwNDEx/My5qcGc_c2VtdD1h/aXNfaHlicmlkJnc9/NzQw",
   },
   {
-    title: "TaskFlow AI",
+    title: "Attendance Tracker",
     desc: "Efficient task manager with Firebase login and real-time updates.",
     tech: ["React", "Firebase", "Authentication", "Material UI"],
     link: "https://smart-cv-iota.vercel.app/",
@@ -91,7 +91,7 @@ const ProjectDashboard = () => {
         </p>
       </div>
 
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  px-4">
+      <div className="max-w-7xl mx-auto grid gap-7 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 px-4 cursor-pointer">
         {projects.map((proj, i) => (
           <div key={i} className="bg-zinc-900 border border-zinc-800  shadow overflow-hidden flex flex-col">
             {/* Image */}
